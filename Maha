@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Maha! 🎂💖</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffe6f2;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            border: 4px solid pink;
+        }
+        h1 {
+            color: #ff4081;
+        }
+        .bold-text {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid pink;
+            margin-bottom: 10px;
+        }
+        .button {
+            background-color: #ff4081;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            width: 200px;
+            margin: 20px auto; /* Center the button */
+        }
+        .button:hover {
+            background-color: #e91e63;
+        }
+        .hidden {
+            display: none;
+        }
+        .message-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: left;
+            max-width: 500px;
+        }
+        .message-block {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .message-pic {
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            border: 2px solid pink;
+        }
+        .sticker-container {
+            margin-top: 20px;
+        }
+        .final-message {
+            margin-top: 30px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #ff4081;
+        }
+        .final-pic {
+            width: 150px;
+            height: 150px;
+            margin-top: 10px;
+            border-radius: 15px;
+            border: 3px solid pink;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Page 1: Birthday Greeting -->
+    <div id="page1" class="container">
+        <div class="card">
+            <img src="images/maha.jpg" alt="Maha" class="profile-pic">
+            <h1>Happy Birthday, Maha! 🎉💖</h1>
+            <p class="bold-text">24th February 2006</p>
+            <p>You make every moment special, and today is all about celebrating YOU! 🎂✨</p>
+            <button class="button" onclick="nextPage()">Next Page 🐱</button>
+        </div>
+    </div>
+
+    <!-- Page 2: Personal Message -->
+    <div id="page2" class="container hidden">
+        <div class="message-container">
+            <h1>Just a little message for you, Maha! 💖</h1>
+
+            <div class="message-block">
+                <img src="images/message1.jpg" alt="Message Image 1" class="message-pic">
+                <p>
+                    Maha, you are the kindest person I have ever met. Your heart is full of warmth, and your presence alone makes everything better.
+                </p>
+            </div>
+
+            <div class="message-block">
+                <img src="images/message2.jpg" alt="Message Image 2" class="message-pic">
+                <p>
+                    Every moment spent with you feels special. You bring happiness and light into my life, and I am grateful for you every single day.
+                </p>
+            </div>
+
+            <div class="message-block">
+                <img src="images/message3.jpg" alt="Message Image 3" class="message-pic">
+                <p>
+                    Your smile is the most beautiful thing in the world. It brightens even the darkest days and fills my heart with love.
+                </p>
+            </div>
+
+            <div class="message-block">
+                <img src="images/message4.jpg" alt="Message Image 4" class="message-pic">
+                <p>
+                    I hope this birthday brings you as much happiness as you bring to me. You deserve all the love and joy in the world. 💕
+                </p>
+            </div>
+
+            <div class="sticker-container">
+                <img src="images/hello-kitty-sticker1.png" alt="Hello Kitty Sticker" class="message-pic">
+                <img src="images/hello-kitty-sticker2.png" alt="Hello Kitty Sticker" class="message-pic">
+                <img src="images/hello-kitty-sticker3.png" alt="Hello Kitty Sticker" class="message-pic">
+            </div>
+
+            <div class="final-message">
+                <p>Happy Birthday, My Love! 🎀💕</p>
+                <img src="images/final.jpg" alt="Final Image" class="final-pic">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function nextPage() {
+            document.getElementById("page1").classList.add("hidden");
+            document.getElementById("page2").classList.remove("hidden");
+        }
+    </script>
+
+</body>
+</html>
